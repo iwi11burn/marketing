@@ -477,13 +477,14 @@ body {
 	border-radius: 50%;
 	padding: 0;
 	border: none;
+	/* font-size: 0; */ /*в этом случае нужно задать transform: translateY(-2px);*/
 }
 
-.slick-active .slick-dots button {
+.slick-active button {
 	opacity: 1;
 	width: 10px;
 	height: 10px;
-	transform: translateY(-2px);
+	transform: translateY(2px);
 }
 
 .slick-prev,
@@ -503,4 +504,33 @@ body {
 
 .slick-next {
 	right: -95px;
+}
+
+.team {
+	padding: 120px 0 130px;
+}
+
+.team__title {
+	margin-bottom: 100px;
+}
+
+.team__items {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.team__name {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	padding: 35px 0 12px;
+	color: #333333;
+}
+
+.team__position {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 16px;
 }
